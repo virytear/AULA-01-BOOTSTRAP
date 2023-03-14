@@ -9,74 +9,76 @@
 </head>
 
 <body>
+
+	<!--barra de navegação -->
 	<header>
 		<nav class="navbar navbar-default">
-			<div class="container">
+			<div class="container"> <!-- agrupar conteudo -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
 						data-target="#collapse-navbar">
-						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-
-					<a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+					<a class="navbar-brand" href="#">TopCasaFina Arquitetura</a> <!--LOGO OU NOME-->
 				</div>
 				<div class="collapse navbar-collapse" id="collapse-navbar">
 					<ul class="nav navbar-nav">
 						<li><a href="#">Sobre Nós</a></li>
 						<li><a href="#">Nossos Projetos</a></li>
 						<li><a href="#">Depoimentos</a></li>
-						<li><a href="#">Contato</a></li>
+						<li><a href="#">Contatos</a></li>
 					</ul>
-				</div>
+				</div> <!-- esconder a div/hamburguer e aparecer o menu escondido-->
 			</div>
 		</nav>
-
 		<div class="container">
-			<div class="banner">
-				<h1>TopCasaFina Arquitetura</h1>
-				<p>Projetando a casa dos sonhos desde 2000 A.C</p>
-				<button class="btn btn-primary btn-lg">Contate-nos agora</button>
+			<div class="TopCasaFina-banner">
+				<h1>TopCasaFina Arquiterura</h1>
+				<p>Projetando a casa dos sonhos desde 2000 a.c</p>
+				<button class="btn btn-primary btn-lg"> <!-- ajutes no botão-->
+					Entrar em Contato
+				</button>
 			</div>
 		</div>
 	</header>
-
-	<section id="sobre-nos" class="container">
+	<!------------------------------------------------------------------------------------------>
+	<section class="container"> <!--novo bloco-->
 		<h2>Sobre Nós</h2>
 		<div class="row">
-			<img src="assets/img/empresa.jpg" class="col-sm-6 img-responsive">
-			<div class="panel col-sm-6">
+			<img class="col-md-6" src="assets/img/empresa.jpg">
+			<div class="painel-group col-md-6" id="paines-sobre"> <!--painel sanfoninha-->
 				<div class="panel panel-default">
-					<div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" >
-						<h3 class="panel-title">Desde 1935</h3>
+					<div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">
+						<h3 class="panel-title">Desde 2000 a.c</h3>
 					</div>
-					<div class="collapse in" id="primeiro-paragrafo">
-						<div class="panel-body">
-							Desde 1935 trazendo casa, mansões e prédios lindos para o mundo
-						</div>
+					<div id="primeiro-paragrafo">
+					<div class="panel-body">
+						desde 2000 a.c trazendo casas, mansoes e predios
+						lindos para o mundo.
 					</div>
 				</div>
+				</div>
 				<div class="panel panel-default">
-					<div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" >
+					<div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">
 						<h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
 					</div>
-					<div class="collapse in" id="segundo-paragrafo">
-						<div class="panel-body">
-							Trazendo alegria para a vida  das pessoas que tem dinheiro pra gastar
-						</div>
+					<div id="segundo-paragrafo">
+					<div class="panel-body">
+						Trazendo alegria para a vida das pessoas que tem dinheiro para gastar
 					</div>
 				</div>
+				</div>
 				<div class="panel panel-default">
-					<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" >
-						<h3 class="panel-title">Mais de 300 prêmios em design e conforto</h3>
+					<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
+						<h3 class="panel-title">Mais de 300 premios em design</h3>
 					</div>
-					<div class="collapse in" id="terceiro-paragrafo">
-						<div class="panel-body">
-							Mais de 5 milhões de clientes satisfeitos em todo mundo
-						</div>
+					<div id="terceiro-paragrafo">
+					<div class="panel-body">
+						Mais de 5 milhões de clientes satisfeitos em todo mundo
 					</div>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -84,186 +86,181 @@
 
 	<div class="jumbotron">
 		<div class="container">
-			<h3>Mais de 300 prêmios em design e conforto</h3>
+			<h3>Mais de 300 premios de design e em conforto</h3>
 			<p>Mais de 5 milhões de clientes satisfeitos em todo mundo</p>
 		</div>
 	</div>
 
-	<section id="nossos-projetos" class="container">
-		<h2>Nossos Projetos</h2>
+	<section class="container">
+		<h2>Nossos projetos</h2>
 		<div class="row">
-			<div class="col-lg-3">
-				<div class="thumbnail">
-					<img src="assets/img/projetos/casa-castelo.png">
-					<div class="caption">
-						<h3>Casa Castelo</h3>
-						<p>A casa castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
-					</div>
-				</div>
+			<div class="col-md-3">
+				<figure class="thumbnail"><!--card na imagem, representar a descrição da imgem-->
+					<img src="assets/img/projetos/casa-castelo.png" alt="">
+					<figcaption class="caption">
+						<h3>Casa castelo</h3>
+						<p>Casa castelo é nosso ultimo lasçamento de sucesso,
+							feita para monge budista.
+						</p>
+					</figcaption>
+				</figure>
 			</div>
-			<div class="col-lg-3">
-				<div class="thumbnail">
-					<img src="assets/img/projetos/casa-lago.png">
-					<div class="caption">
-						<h3>Casa Lago</h3>
-						<p>A casa castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
-					</div>
-				</div>
+			<div class="col-md-3">
+				<figure class="thumbnail"><!--card na imagem, representar a descrição da imgem-->
+					<img src="assets/img/projetos/casa-lago.png" alt="">
+					<figcaption class="caption">
+						<h3>Casa Lagos</h3>
+						<p>Casa castelo é nosso ultimo lasçamento de sucesso,
+							feita para monge budista.
+						</p>
+					</figcaption>
+				</figure>
 			</div>
-			<div class="col-lg-3">
-				<div class="thumbnail">
-					<img src="assets/img/projetos/mercado-marapira.png">
-					<div class="caption">
-						<h3>Mercado Marapira</h3>
-						<p>A casa castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
-					</div>
-				</div>
+			<div class="col-md-3">
+				<figure class="thumbnail"><!--card na imagem, representar a descrição da imgem-->
+					<img src="assets/img/projetos/mercado-marapira.png" alt="">
+					<figcaption class="caption">
+						<h3>Casa Marapira</h3>
+						<p>Casa castelo é nosso ultimo lasçamento de sucesso,
+							feita para monge budista.
+						</p>
+					</figcaption>
+				</figure>
 			</div>
-			<div class="col-lg-3">
-				<div class="thumbnail">
-					<img src="assets/img/projetos/palacio-dionisio.png">
-					<div class="caption">
-						<h3>Palacio Dionisio</h3>
-						<p>A casa castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
-					</div>
-				</div>
+			<div class="col-md-3">
+				<figure class="thumbnail"><!--card na imagem, representar a descrição da imgem-->
+					<img src="assets/img/projetos/palacio-dionisio.png" alt="">
+					<figcaption class="caption">
+						<h3>Casa Dionisio</h3>
+						<p>Casa castelo é nosso ultimo lasçamento de sucesso,
+							feita para monge budista.
+						</p>
+					</figcaption>
+				</figure>
 			</div>
-			<div class="col-lg-3">
-				<div class="thumbnail">
-					<img src="assets/img/projetos/residencia-ludi.png">
-					<div class="caption">
-						<h3>Residencia Ludi</h3>
-						<p>A casa castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
-					</div>
-				</div>
+			<div class="col-md-3">
+				<figure class="thumbnail"><!--card na imagem, representar a descrição da imgem-->
+					<img src="assets/img/projetos/residencia-ludi.png" alt="">
+					<figcaption class="caption">
+						<h3>Residencia-ludi</h3>
+						<p>Casa castelo é nosso ultimo lasçamento de sucesso,
+							feita para monge budista.
+						</p>
+					</figcaption>
+				</figure>
 			</div>
 		</div>
 	</section>
-
-	<section id="depoimentos" >
-		<h2 class="container titulo-depoimento text-center">Depoimentos de Clientes</h2>
-
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1" ></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+	<section class="">
+		<h2 class="titulo-depoimentos">Depoimentos de clientes</h2>
+		<div id="carrossel-depoimentos" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators"> <!--indicador da imagem-->
+				<li data-target="#carrossel-depoimentos" data-slide-to="0" class="active"> <!--data slide é um vetor-->
+				</li>
+				<li data-target="#carrossel-depoimentos" data-slide-to="1" class="active">
+				</li>
+				<li data-target="#carrossel-depoimentos" data-slide-to="2" class="active">
+				</li>
 			</ol>
-
 			<div class="carousel-inner" role="listbox">
 				<figure class="item active">
 					<img src="assets/img/depoimentos/depoimento1.png">
 					<figcaption class="carousel-caption">
-						<h3>Italo Cubas</h3>
-						<p>Gostei muito e achei rapido o serviço</p>
-					</figcaption>
-				</figure>
-				<figure class="item">
-					<img src="assets/img/depoimentos/depoimento2.png">
-					<figcaption class="carousel-caption">
-						<h3>Raquel Cruz</h3>
-						<p>Gostei muito e achei rapido o serviço</p>
-					</figcaption>
-				</figure>
-				<figure class="item">
-					<img src="assets/img/depoimentos/depoimento3.png">
-					<figcaption class="carousel-caption">
-						<h3>Italo Cubas</h3>
-						<p>Exelente trabalho</p>
+						<h3>Lucas Antonietti</h3>
+					<p>Gostei muito e achei barato</p>
 					</figcaption>
 				</figure>
 				<figure class="item">
 					<img src="assets/img/depoimentos/depoimento1.png">
 					<figcaption class="carousel-caption">
-						<h3>Vitão do mau</h3>
-						<p>Gostei, muito competente.</p>
+						<h3>Arthur de jesus</h3>
+					<p>Gostei muito e achei barato</p>
+					</figcaption>
+				</figure>
+				<figure class="item">
+					<img src="assets/img/depoimentos/depoimento1.png">
+					<figcaption class="carousel-caption">
+						<h3>Leticia Santiago</h3>
+					<p>Gostei muito e achei barato</p>
 					</figcaption>
 				</figure>
 			</div>
-
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" >
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true" ></span>
-				<span class="sr-only" >Anterior</span>
+			<a class="left carousel-control" href="#carrossel-depoimentos" role="button" data-slide="prev">
+				<span 
+				class="glyphicon glyphicon-chevron-left" 
+				aria-hidden="true">
+				</span>
 			</a>
-			
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right " aria-hidden="true" ></span>
-				<span class="sr-only" >Proximo</span>
+			<a class="right carousel-control" href="#carrossel-depoimentos" role="button" data-slide="next">
+				<span 
+				class="glyphicon glyphicon-chevron-right" 
+				aria-hidden="true">
+				</span>
 			</a>
-
 		</div>
-
 	</section>
-
-
 	<section class="container">
 		<div class="row">
-			<section id="video" class="col-sm-6">
-				<h2>Video Institucional</h2>
+
+			<!------------------>
+			<aside class="col-md-6">
+				<h2>video Institucional</h2>
 				<div>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/WJtH7Uw2e2A"
-					title="YouTube video player" frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/yXRQy-90vms" 
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+					encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
-			</section>
-
-			<section id="contato" class="col-sm-6">
+			</aside>
+			<!------------------>
+			<aside class="col-md-6">
 				<h2>Contato</h2>
-				<h4>Entre em contato conosco</h4>
-
+				<h4>Entre em contato</h4>
 				<form>
 					<div class="form-group">
-						<label for="contato-nome">Nome:</label>
-						<input id="contato-nome" class="form-control" placeholder="Seu Nome" type="text">
-					</div>
-					<div class="form-group">
-						<label for="contato-email">E-mail:</label>
-						<input type="email" id="contato-email" class="form-control" placeholder="Seu e-mail">
-					</div>
+						<label for="contato-nome">Nome</label>
+						<label for="form-control" type="text" id="contato-nome"></label>
 
-					<div class="grupo-radio">
-						<div class="radio">
+						<!---------------------->
+						<div class="form-group">
+							<label for="contato-email">Email</label>
+							<input class="form-control" type="email" id="contato-email">
+						</div>
+						<div class="form-group">
 							<label>
-								<input type="radio" name="tipo-pessoa" checked>
-								Pessoa Física
+								<input name="tipo-pessoa" type="radio">
+								pessoa fisica
 							</label>
 						</div>
-						<div class="radio">
+						<div class="form-group">
 							<label>
-								<input type="radio" name="tipo-pessoa">
-								Pessoa Juridíca
+								<input name="tipo-pessoa" type="radio">
+								pessoa juridica
 							</label>
 						</div>
+						<select class="form-control">
+							<option value="">Tipo de solicitação</option>
+							<option value="">Casa</option>
+							<option value="">Apartamentp</option>
+							<option value="">Mansão</option>
+						</select>
+						<button type="submit" class="btn btn-primary">Enviar</button>
 					</div>
-
-					<select name="tipo-solicitacao">
-						<option value="" disabled selected> Tipo Solicitação </option>
-						<option value="casa">Casa</option>
-						<option value="apartamento">Apartamento</option>
-						<option value="mansao">Mansao</option>
-					</select>
-
-					<button type="submit" class="btn btn-primary" >Enviar</button>
-
 				</form>
+				<div></div>
+			</aside>
 
-			</section>
 		</div>
-	</section>
 
+	</section>
 	<footer>
 		<address>
 			<strong>TopCasaFina Arquitetura</strong>
-			<br>
-			Rua H44, 421, Vila Sul
-			<br>
-			Goiânia - Goiânia
-			<br>
-			Tel: (62)3030-4444 ou (62)3030-3333
+			Rua berna 345, 9764, Vila Floraes <br>
+			Cuiaba-MT <br>
+			Telefone: (65) 3003-1230 ou (65) 9998-7554
 		</address>
 		<address>
-			E-mail: contato.topcasafina@email.com.br
+			Email: Topcas@FINARQUITERURA@gmail.com
 		</address>
 	</footer>
 
